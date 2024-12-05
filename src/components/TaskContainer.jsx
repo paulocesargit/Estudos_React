@@ -85,7 +85,7 @@ function TaskContainer() {
     },
   ];
   return (
-    <div>
+    <div className="task-container">
       {tasks.map((task) => (
         <Task key={task.id} title={task.title} description={task.description} />
       ))}
