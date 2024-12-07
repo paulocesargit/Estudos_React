@@ -14,9 +14,9 @@ o Header e responsavel pela parte de cima do site onde exibimos o titulo e em se
 
 # Explicação das alteraçoes feitas:
 
-- foi adicioando CSS no app.css para adicionar estilo a Lista de Tarefas
+adicinei o css no app.css para adicionar estilo a Lista de Tarefas
 
-fiz um botão separado em na pasta components (Button.js) para melhorar a modularidade.
+fiz um botao separado em na pasta components (Button.js) para melhorar a modularidade.
 Ele recebe via props:
 onClick: A função toggleTaskView para alternar o estado.
 isShowingAll: O estado atual para exibir o texto correto no botão.
@@ -27,7 +27,9 @@ isShowingAll: O estado atual para exibir o texto correto no botão.
 - false: Exibe apenas as tarefas que forem marcadas como importante.
 
 Quando showAllTasks é true, mostra todas.
-Quando é false, filtra as tarefas usando filter e includes.
+Quando é false, filtra as tarefas usando filter e include onde escolhi a palavra " Importantes" para ele filtar.
+
+Sempre que o usuario quiser marcar uma anotaçao como importante ele tera que escrever no titulo como mostrado nas imagens seguintes...
 
 ## Tela inicial da Lista de Tarefas
 
