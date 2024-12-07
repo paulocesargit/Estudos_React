@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-function ToggleButton({ onClick, isShowingAll }) {
+function ToggleMode({ onClick, isShowingAll }) {
   return (
     <button onClick={onClick} className="toggle-button">
       {isShowingAll
@@ -11,9 +11,9 @@ function ToggleButton({ onClick, isShowingAll }) {
   );
 }
 
-ToggleButton.propTypes = {
+ToggleMode.propTypes = {
   onClick: PropTypes.func.isRequired,
   isShowingAll: PropTypes.bool.isRequired,
 };
 
-export default ToggleButton;
+export default ToggleMode;

@@ -21,12 +21,12 @@ Ele recebe via props:
 onClick: A função toggleTaskView para alternar o estado.
 isShowingAll: O estado atual para exibir o texto correto no botão.
 
-### Foi adicionado o estado showAllTasks no TaskContainer para controlar a exibição das tarefas.
+### Foi adicionado o estado todasTarefas no TaskContainer para controlar a exibição das tarefas.
 
 - true: Exibe todas as tarefas da lista.
 - false: Exibe apenas as tarefas que forem marcadas como importante.
 
-Quando showAllTasks é true, mostra todas.
+Quando todasTarefas é true, mostra todas.
 Quando é false, filtra as tarefas usando filter e include onde escolhi a palavra " Importantes" para ele filtar.
 
 Sempre que o usuario quiser marcar uma anotaçao como importante ele tera que escrever no titulo como mostrado nas imagens seguintes...

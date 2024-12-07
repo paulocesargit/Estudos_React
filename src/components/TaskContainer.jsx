@@ -91,19 +91,19 @@ function TaskContainer() {
     },
   ];
 
-  const [showAllTasks, setShowAllTasks] = useState(true);
+  const [todasTarefas, selecTodasTarefas] = useState(true);
 
-  const filteredTasks = showAllTasks
+  const filteredTasks = todasTarefas
     ? tasks
     : tasks.filter((task) => task.title.includes("Importante"));
 
   const toggleTaskView = () => {
-    setShowAllTasks(!showAllTasks);
+    selecTodasTarefas(!todasTarefas);
   };
 
   return (
     <div>
-      <ToggleButton onClick={toggleTaskView} isShowingAll={showAllTasks} />
+      <ToggleButton onClick={toggleTaskView} isShowingAll={todasTarefas} />
       <div className="task-container">
         {filteredTasks.map((task) => (
           <Task
