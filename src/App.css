@@ -59,3 +59,24 @@ header section p {
   color: #666;
   font-size: 1em;
 }
+.toggle-button {
+  background-color: #4a90e2;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: background-color 0.3s;
+}
+
+.toggle-button:hover {
+  background-color: #357ab8;
+}
+
+.task-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}

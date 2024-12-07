@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import Task from "./Task";
+import ToggleButton from "./Button";
 
 function TaskContainer() {
   const tasks = [
@@ -84,11 +85,29 @@ function TaskContainer() {
       description: "Aplicar patch de segurança",
     },
   ];
+
+  const [showAllTasks, setShowAllTasks] = useState(true);
+
+  const filteredTasks = showAllTasks
+    ? tasks
+    : tasks.filter((task) => task.title.includes("Revisar"));
+
+  const toggleTaskView = () => {
+    setShowAllTasks(!showAllTasks);
+  };
+
   return (
-    <div className="task-container">
-      {tasks.map((task) => (
-        <Task key={task.id} title={task.title} description={task.description} />
-      ))}
+    <div>
+      <ToggleButton onClick={toggleTaskView} isShowingAll={showAllTasks} />
+      <div className="task-container">
+        {filteredTasks.map((task) => (
+          <Task
+            key={task.id}
+            title={task.title}
+            description={task.description}
+          />
+        ))}
+      </div>
     </div>
   );
 }
