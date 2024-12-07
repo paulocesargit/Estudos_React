@@ -84,13 +84,18 @@ function TaskContainer() {
       title: "Atualização de Sistema",
       description: "Aplicar patch de segurança",
     },
+    {
+      id: 17,
+      title: "Atualização do Servidor ( Importante )",
+      description: "Aplicar patch de segurança",
+    },
   ];
 
   const [showAllTasks, setShowAllTasks] = useState(true);
 
   const filteredTasks = showAllTasks
     ? tasks
-    : tasks.filter((task) => task.title.includes("Revisar"));
+    : tasks.filter((task) => task.title.includes("Importante"));
 
   const toggleTaskView = () => {
     setShowAllTasks(!showAllTasks);

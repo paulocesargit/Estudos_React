@@ -16,22 +16,18 @@ o Header e responsavel pela parte de cima do site onde exibimos o titulo e em se
 
 - foi adicioando CSS no app.css para adicionar estilo a Lista de Tarefas
 
+fiz um botão separado em na pasta components (Button.js) para melhorar a modularidade.
+Ele recebe via props:
+onClick: A função toggleTaskView para alternar o estado.
+isShowingAll: O estado atual para exibir o texto correto no botão.
+
 ### Foi adicionado o estado showAllTasks no TaskContainer para controlar a exibição das tarefas.
 
 - true: Exibe todas as tarefas da lista.
 - false: Exibe apenas as tarefas que forem marcadas como importante.
 
-### filteredTasks decide quais tarefas exibir:
-
 Quando showAllTasks é true, mostra todas.
 Quando é false, filtra as tarefas usando filter e includes.
-
-### Função de Alternância (toggleTaskView):
-
-fiz um botão separado em na pasta components (Button.js) para melhorar a modularidade.
-Ele recebe via props:
-onClick: A função toggleTaskView para alternar o estado.
-isShowingAll: O estado atual para exibir o texto correto no botão.
 
 ## Tela inicial da Lista de Tarefas
 
@@ -39,4 +35,4 @@ isShowingAll: O estado atual para exibir o texto correto no botão.
 
 ## Tela das listas marcadas como importantes assim que clicado no botao
 
-<img alt="Imagem do site" src="./public/img/Telaimportantes.png" width="100%">
+<img alt="Imagem do site" src="./public/img/Telaimportantess.png" width="100%">
