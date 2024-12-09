@@ -1,4 +1,5 @@
 import React from "react";
+import "./Style.css";
 import PropTypes from "prop-types";
 
 function ToggleMode({ onClick, isShowingAll }) {

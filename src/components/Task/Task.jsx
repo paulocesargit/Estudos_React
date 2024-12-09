@@ -1,4 +1,5 @@
 import React from "react";
+import "./style.css";
 import PropTypes from "prop-types";
 function Task({ title, description }) {
   return (
