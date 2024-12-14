@@ -55,7 +55,7 @@ Este projeto contém três componentes que utilizam o hook `useState` para geren
   - Decrementa o número ao clicar no botão "-1".
   - Impede que o número fique negativo.
 
-<img alt="Imagem do site" src="./public/img/Atualizaçao01.png" width="100%">
+<img alt="Imagem do site" src="./public/img/Tela01.png" width="100%">
 
 ### 2. Botão Alternador
 
@@ -63,7 +63,7 @@ Este projeto contém três componentes que utilizam o hook `useState` para geren
 - **Funcionalidades**:
 
   - Alterna o estado ao ser clicado.
-  - Muda a cor do Fundo para Branco (Ligado) ou Escuro (Desligado).
+  - Muda a cor do Fundo para Branco (Desligado) ou Escuro (Ligado).
 
   <img alt="Imagem do site" src="./public/img/Telainicialgif.gif" width="100%">
 
@@ -74,4 +74,4 @@ Este projeto contém três componentes que utilizam o hook `useState` para geren
   - Permite adicionar uma tarefa ao digitar no campo de texto e clicar no botão "Adicionar".
   - Exibe as tarefas em uma lista.
 
-<img alt="Imagem do site" src="./public/img/Atualizaçao02.png" width="100%">
+<img alt="Imagem do site" src="./public/img/Tela02.png" width="100%">
