@@ -39,12 +39,39 @@ Sempre que o usuario quiser marcar uma anotaçao como importante ele tera que es
 
 <img alt="Imagem do site" src="./public/img/Telaimportantess.png" width="100%">
 
-
 ## Atualizaçoes feita
 
-foi adicionado o botao de contar
-<img src="./public/img/atualizaçao01.png" width="100%">
+# Exercícios com React e `useState`
 
-foi adicionado o botao o para adicionar a lista de tarefas, os dados da lista acima sao estaticos sem ser adicionado pelo propio usuario.
+Este projeto contém três componentes que utilizam o hook `useState` para gerenciar estados no React.
 
-<img src="./public/img/atualizaçao02.png" width="100%">
+## Componentes Criados
+
+### 1. Contador
+
+- **Descrição**: Um contador simples que começa em 0.
+- **Funcionalidades**:
+  - Incrementa o número ao clicar no botão "+1".
+  - Decrementa o número ao clicar no botão "-1".
+  - Impede que o número fique negativo.
+
+<img alt="Imagem do site" src="./public/img/Atualizaçao01.png" width="100%">
+
+### 2. Botão Alternador
+
+- **Descrição**: Um botão que alterna entre Escuro ou Claro o Fundo da Lista de Tarefas.
+- **Funcionalidades**:
+
+  - Alterna o estado ao ser clicado.
+  - Muda a cor do Fundo para Branco (Ligado) ou Escuro (Desligado).
+
+  <img alt="Imagem do site" src="./public/img/Telainicialgif.gif" width="100%">
+
+### 3. Lista de Tarefas
+
+- **Descrição**: Um aplicativo para gerenciar uma lista de tarefas.
+- **Funcionalidades**:
+  - Permite adicionar uma tarefa ao digitar no campo de texto e clicar no botão "Adicionar".
+  - Exibe as tarefas em uma lista.
+
+<img alt="Imagem do site" src="./public/img/Atualizaçao02.png" width="100%">
