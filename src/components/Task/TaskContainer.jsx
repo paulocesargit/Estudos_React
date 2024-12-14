@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Task from "./Task";
 import ToggleButton from "../Button/Button";
+import Contador from "../Contador/Contador";
 
 function TaskContainer() {
   const tasks = [
@@ -100,10 +101,10 @@ function TaskContainer() {
   const toggleTaskView = () => {
     selecTodasTarefas(!todasTarefas);
   };
-
   return (
     <div>
       <ToggleButton onClick={toggleTaskView} isShowingAll={todasTarefas} />
+      <Contador />
       <div className="task-container">
         {filteredTasks.map((task) => (
           <Task

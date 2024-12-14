@@ -38,3 +38,13 @@ Sempre que o usuario quiser marcar uma anotaçao como importante ele tera que es
 ## Tela das listas marcadas como importantes assim que clicado no botao
 
 <img alt="Imagem do site" src="./public/img/Telaimportantess.png" width="100%">
+
+
+## Atualizaçoes feita
+
+foi adicionado o botao de contar
+<img src="./public/img/atualizaçao01.png" width="100%">
+
+foi adicionado o botao o para adicionar a lista de tarefas, os dados da lista acima sao estaticos sem ser adicionado pelo propio usuario.
+
+<img src="./public/img/atualizaçao02.png" width="100%">
