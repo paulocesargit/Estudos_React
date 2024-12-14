@@ -69,7 +69,7 @@ Este projeto contém três componentes que utilizam o hook `useState` para geren
 
 ### 3. Lista de Tarefas
 
-- **Descrição**: Um aplicativo para gerenciar uma lista de tarefas.
+- **Descrição**: Um campo de texto para digitar o nome da tarefa e depois adicionala.
 - **Funcionalidades**:
   - Permite adicionar uma tarefa ao digitar no campo de texto e clicar no botão "Adicionar".
   - Exibe as tarefas em uma lista.
