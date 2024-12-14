@@ -1,8 +1,27 @@
+:root {
+  --text-color: #333;
+  --bg-color: #f7f9fc;
+  --stroke-color: rgba(51, 51, 51, 0.2);
+  --surface-color: rgba(51, 51, 51, 0.05);
+  --highlight-color: rgba(51, 51, 51, 0.1);
+  --switch-bg-url: url(./assets/Sun.svg);
+}
+
 body {
-  font-family: "Arial", sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
   margin: 0;
-  padding: 0;
-  color: #333;
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.light {
+  --text-color: #fff;
+  --bg-color: #333;
+  --stroke-color: rgba(255, 255, 255, 0.5);
+  --surface-color: rgba(255, 255, 255, 0.1);
+  --highlight-color: rgba(255, 255, 255, 0.2);
+  --switch-bg-url: url(./assets/MoonStars.svg);
 }
 
 .App {
