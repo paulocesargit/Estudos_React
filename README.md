@@ -92,8 +92,6 @@ Por que tem a condição: Evita que o contador fique com valores negativos.
 
 ### Esttrutura do Código do Scripts
 
-Este código é um componente React que implementa um **alternador de modo** (tema claro ou Escuro) usando estado e efeitos. Ele adiciona ou remove uma classe no `body` da página para aplicar estilos correspondentes.
-
 ### Estado `isLightMode`
 
 - **O que faz**: Este efeito é acionado sempre que o valor de isLightMode muda.
@@ -113,8 +111,6 @@ Este código é um componente React que implementa um **alternador de modo** (te
 <img alt="Imagem do site" src="./public/img/Tela02.png" width="100%">
 
 ### Estrutura do Codigo
-
-Este código implementa um componente React para adicionar tarefas a uma lista. Ele permite capturar uma tarefa no campo de texto e enviá-la para o componente pai através da função `onAddTask`.
 
 ### Componente `ListaDeTarefas`
 
