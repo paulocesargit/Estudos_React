@@ -59,21 +59,21 @@ Este projeto contém três componentes que utilizam o hook `useState` para geren
 
 ### Estrutura do Código
 
-### 1. Importação de `useState`
+### Importação de `useState`
 
 `const [count, setCount] = useState(0);`
 
 - **O que faz**: O `useState` é um hook do React que cria uma variável de estado (neste caso, `count`) e uma função para atualizá-la (`setCount`).
 - **Valor inicial**: O contador começa com o valor `0`.
 
-### 2. Função `adicionar`
+### Função `adicionar`
 
 `const adicionar = () => setCount(count + 1);`
 
 - **O que faz**: Esta função incrementa o valor de `count` em 1 sempre que for chamada.
 - **Como é usada**: É acionada pelo botão `+1`.
 
-### 3. Função `tirar`
+### Função `tirar`
 
 -**O que faz**: Verifica se o valor de count é maior que 0. Se for, subtrai 1 do valor atual.
 Por que tem a condição: Evita que o contador fique com valores negativos.
@@ -96,7 +96,7 @@ Este código é um componente React que implementa um **alternador de modo** (te
 
 ## Estrutura do Código
 
-### 1. Estado `isLightMode`
+### Estado `isLightMode`
 
 - **O que faz**: Este efeito é acionado sempre que o valor de isLightMode muda.
   Se isLightMode for true, adiciona a classe light ao body.
