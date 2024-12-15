@@ -94,8 +94,6 @@ Por que tem a condição: Evita que o contador fique com valores negativos.
 
 Este código é um componente React que implementa um **alternador de modo** (tema claro ou Escuro) usando estado e efeitos. Ele adiciona ou remove uma classe no `body` da página para aplicar estilos correspondentes.
 
-## Estrutura do Código
-
 ### Estado `isLightMode`
 
 - **O que faz**: Este efeito é acionado sempre que o valor de isLightMode muda.
