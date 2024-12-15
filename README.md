@@ -57,6 +57,29 @@ Este projeto contém três componentes que utilizam o hook `useState` para geren
 
 <img alt="Imagem do site" src="./public/img/Tela01.png" width="100%">
 
+### Estrutura do Código
+
+### 1. Importação de `useState`
+
+`const [count, setCount] = useState(0);`
+
+- **O que faz**: O `useState` é um hook do React que cria uma variável de estado (neste caso, `count`) e uma função para atualizá-la (`setCount`).
+- **Valor inicial**: O contador começa com o valor `0`.
+
+### 2. Função `adicionar`
+
+`const adicionar = () => setCount(count + 1);`
+
+- **O que faz**: Esta função incrementa o valor de `count` em 1 sempre que for chamada.
+- **Como é usada**: É acionada pelo botão `+1`.
+
+### 3. Função `tirar`
+
+-**O que faz**: Verifica se o valor de count é maior que 0. Se for, subtrai 1 do valor atual.
+Por que tem a condição: Evita que o contador fique com valores negativos.
+
+<img alt="Imagem do site" src="./public/img/CodeContador.png" width="100%">
+
 ### 2. Botão Alternador
 
 - **Descrição**: Um botão que alterna entre Escuro ou Claro o Fundo da Lista de Tarefas.
@@ -67,6 +90,21 @@ Este projeto contém três componentes que utilizam o hook `useState` para geren
 
   <img alt="Imagem do site" src="./public/img/Telainicialgif.gif" width="100%">
 
+### Esttrutura do Código do Scripts
+
+Este código é um componente React que implementa um **alternador de modo** (tema claro ou Escuro) usando estado e efeitos. Ele adiciona ou remove uma classe no `body` da página para aplicar estilos correspondentes.
+
+## Estrutura do Código
+
+### 1. Estado `isLightMode`
+
+- **O que faz**: Este efeito é acionado sempre que o valor de isLightMode muda.
+  Se isLightMode for true, adiciona a classe light ao body.
+  Se isLightMode for false, remove a classe.
+  Resultado esperado: A classe aplicada ao body altera o estilo da página, dependendo do tema ativo.
+
+<img alt="Imagem do site" src="./public/img/botaoalternador.png" width="100%">
+
 ### 3. Lista de Tarefas
 
 - **Descrição**: Um campo de texto para digitar o nome da tarefa e depois adicionala.
@@ -75,3 +113,22 @@ Este projeto contém três componentes que utilizam o hook `useState` para geren
   - Exibe as tarefas em uma lista.
 
 <img alt="Imagem do site" src="./public/img/Tela02.png" width="100%">
+
+### Estrutura do Codigo
+
+Este código implementa um componente React para adicionar tarefas a uma lista. Ele permite capturar uma tarefa no campo de texto e enviá-la para o componente pai através da função `onAddTask`.
+
+### Componente `ListaDeTarefas`
+
+- **Props**:
+- onAddTask: Função passada como prop para adicionar uma nova tarefa ao componente pai.
+- Estado Local:
+  newTask: Armazena o valor do campo de entrada onde o usuário digita a nova tarefa.
+- setNewTask: Função para atualizar o estado de newTask.
+- newTask.trim(): Remove espaços em branco no início e no fim da string antes de enviar a tarefa.
+  Condição:
+- if (newTask.trim()): Verifica se o campo não está vazio antes de enviar a tarefa.
+- onAddTask(newTask.trim()): Chama a função passada como prop (onAddTask) enviando o valor da nova tarefa para o componente pai.
+- setNewTask(""): Limpa o campo de entrada após enviar a tarefa com sucesso.
+
+<img alt="Imagem do site" src="./public/img/ListadeTarefas.png" width="100%">
